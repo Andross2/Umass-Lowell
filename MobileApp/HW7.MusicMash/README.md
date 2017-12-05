@@ -1,8 +1,6 @@
-# assignment-6-music-mash-vdc1703
+# assignment-7-music-mash-vdc1703
 
 Name: Chuong Vu
-
-Student ID: 01498233
 
 I also got the embed youtube work on my app.
 

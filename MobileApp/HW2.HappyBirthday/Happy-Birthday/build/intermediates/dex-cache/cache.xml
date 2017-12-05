@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/vdc/Code/MobileApp/Assign2/Happy-Birthday/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e33c0fca96ec462d983d7a9eb0af15eb14ba0a64">
+        <dex dex="/Users/vdc/Code/MobileApp/Assign2/Happy-Birthday/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_de806642197d06a0b97aaee56f9633c20baadc88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vdc/Code/MobileApp/Assign2/Happy-Birthday/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/vdc/Code/MobileApp/Assign2/Happy-Birthday/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6bd3d3ad5ec0adfb239161e033e4053e3a28f010/classes.dex" />
+    </item>
+
+</items>

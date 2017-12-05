@@ -2,8 +2,6 @@
 
 Name: Chuong Vu
 
-Student ID: 01498233
-
 I use “computer” as the key search for API.
 
 I also have add the Microsoft Machine Learning API to detect the language written of the News based on the title of the news
