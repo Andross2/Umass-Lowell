@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Resume</string>
+    <string name="chuong_vu">Chuong Vu</string>
+    <string name="email">chuong_vu@student.uml.edu\t|\t508-423-6136</string>
+    <string name="edu">Education</string>
+    <string name="uml_school">University of Massachusetts Lowell - Lowell, MA\nBachelor of Science in Computer Science</string>
+    <string name="grad">Anticipated May 2017</string>
+    <string name="skills">Technical Skills</string>
+    <string name="skill1">Programing Language: C, C++, VB.NET, ASP.NET, Python, MySQL\nVirtual Servers: VMware Workstation, VM VirtualBox\nOperating Systems: Windows 7/8.1/10, Linux CentOS/Ubuntu/Mint\nSoftware: MS Office Suites, MS Visio</string>
+    <string name="project">Academic Projects</string>
+    <string name="project1">-\tDatabase Auto Update: Created a program with VB.NET that gets data from machines in a network and save all the information to the MongoDB. Also used ASP.NET that query data from the MongoDB and display it on a webpage.
+                            \n-\tCisco Routing Networks: CCP, ACL, OSPF, VLAN, VLSM, DHCP
+                            \n-\tLinux Security Project: Setup and configured security for Linux Server by using iptable
+                            </string>
+    <string name="experience">Experience</string>
+    <string name="exper1">University of Massachusetts Lowell - Lowell, MA</string>
+    <string name="date1">Jan 2015 – Present</string>
+    <string name="lab_assistant"><u>Lab Assistant</u></string>
+    <string name="jobs">-	Setup and maintain computers in three labs\n
+                        -	Tutor CS Students in programming languages and CS related courses\n
+                        -	Provide customer service and support to CS students/faculty/staff</string>
+    <string name="grader"><u>Grader</u></string>
+    <string name="assembly">-\tGrader for Assembly Language Programming Course</string>
+    <string name="autoliv">Autoliv - Lowell, MA</string>
+    <string name="autolivexp"><u>Technical Intern</u></string>
+    <string name="autolivdate">Summer 2016</string>
+    <string name="autolivexp1">-\tCreated automated program to analyze database of the testing machine\n
+                                -\tWrote macro for Microsoft Excel and Minitab to calculate results</string>
+
+
+</resources>

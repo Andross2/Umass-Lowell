@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MusicMash</string>
+
+
+    <string name="cat_study">Study</string>
+    <string name="cat_gym">Gym</string>
+    <string name="cat_sleep">Sleep</string>
+    <string name="cat_bus">Bus</string>
+
+
+    <string name="parks">Parks</string>
+    <string name="song_name">Title</string>
+    <string name="singer">Singer</string>
+    <string name="nowplaying">NowPlaying</string>
+    <string name="playingsongname">Playing Song Name</string>
+    <string name="artisplaying">Playing Artist</string>
+</resources>

@@ -1,0 +1,213 @@
+#lang racket
+
+;; read Section 1.1 of SICP
+;; https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_sec_1.1
+
+;; read Section 1.2 of SICP
+;; https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2
+
+;; write a recursive procedure for adding the first n natural numbers
+;; which will result in a recursive process being carried out
+;; e.g. (sum-recursive 0) is 0
+;;      (sum-recursive 1) is 1
+;;	(sum-recursive 2) is 3 [it's 2 + 1]
+;;      (sum-recursive 3) is 6 [it's 3 + 2 + 1]
+(define (sum-recursive n)
+  (if (= n 0)
+      0
+      (+ n (sum-recursive (- n 1))))
+  )
+
+;; what is the TIME complexity of this process?
+;; for a refresher on Big-O Notation:
+;; https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
+;;
+;; uncomment the line that has the correct answer
+;;
+;; (define sum-recursive-time-complexity "O(1)")
+ (define sum-recursive-time-complexity "O(N)")
+;; (define sum-recursive-time-complexity "O(N^2)")
+;; (define sum-recursive-time-complexity "O(N log N)")
+
+;; what is the SPACE complexity of this process?
+;; uncomment the line that has the correct answer
+;;
+;; (define sum-recursive-space-complexity "O(1)")
+;; (define sum-recursive-space-complexity "O(N)")
+;; (define sum-recursive-space-complexity "O(N^2)")
+ (define sum-recursive-space-complexity "O(N log N)")
+
+;; write a recursive procedure for adding the first n natural numbers
+;; which will result in a ITERATIVE process being carried out
+(define (sum-iterative n)
+     (sum-iter 0 0 n)
+  )
+
+(define (sum-iter sum counter max-count)
+  (if (> counter max-count)
+      sum
+      (sum-iter (+ counter sum)
+                (+ counter 1)
+                max-count))
+  )
+;; what is the TIME complexity of this process?
+;; uncomment the line that has the correct answer
+;;
+;; (define sum-iterative-time-complexity "O(1)")
+ (define sum-iterative-time-complexity "O(N)")
+;; (define sum-iterative-time-complexity "O(N^2)")
+;; (define sum-iterative-time-complexity "O(N log N)")
+
+;; what is the SPACE complexity of this process?
+;; uncomment the line that has the correct answer
+;;
+ (define sum-iterative-space-complexity "O(1)")
+;; (define sum-iterative-space-complexity "O(N)")
+;; (define sum-iterative-space-complexity "O(N^2)")
+;; (define sum-iterative-space-complexity "O(N log N)")
+
+;; write a recursive procedure for sum of squares of first n natural numbers
+;; that produces a RECURSIVE process
+;; e.g., (sum-squares-recursive 0) is 0
+;; 	 (sum-squares-recursive 1) is 1
+;; 	 (sum-squares-recursive 2) is 5 (2^2 + 1^2)
+(define (sum-squares-recursive n)
+  (if (= n 0)
+      0
+      (+ (* n n) (sum-squares-recursive (- n 1))))
+  )
+
+;; write a recursive procedure for the same
+;; that produces an ITERATIVE process
+(define (sum-squares-iterative n)
+   (sum-squares-iter 0 0 n)
+  )
+
+(define (sum-squares-iter sum counter max-count)
+  (if (> counter max-count)
+      sum
+      (sum-squares-iter (+ (* counter counter) sum)
+                (+ counter 1)
+                max-count))
+  )
+
+;; write a recursive procedure for sum of squares of first n odd numbers
+;; (starting with 1)
+;; that produces a RECURSIVE process
+;; e.g., (sum-alt-squares-recursive 0) is 0
+;; 	 (sum-alt-squares-recursive 1) is 1 (1^2)
+;; 	 (sum-alt-squares-recursive 2) is 10 (3^2 + 1^2)
+;; 	 (sum-alt-squares-recursive 3) is 35 (5^2 + 3^2 + 1^2)
+(define (sum-alt-squares-recursive n (x 1) (s 0)) ;; n is input, x = 1, s = 0 (sum) -- option input x and s. use for recursive
+  (if (= n 0);; check if n is 0
+      s      ;; return s if it true
+      (sum-alt-squares-recursive (- n 1) ;; n counter subtract by 1
+                                 (+ x 2) ;; x value start at 1 and increase by 2
+                                 (+ s (* x x)))) ;; add value x^2 to sum
+  )
+
+;; write a recursive procedure for the same
+;; that produces an ITERATIVE process
+(define (sum-alt-squares-iterative n)
+  0)
+
+;; following series converges to 2/3
+;; (notice alternating addition and subtraction of the terms):
+;;
+;;  1     1     1     1     1
+;; --- - --- + --- - --- + ---  etc.
+;;  1     2     4     8     16
+;;
+;; implement as a recursive process, where the argument is the number of terms  
+;; e.g. 
+;; (two-thirds-series 0) is 1
+;; (two-thirds-series 1) is 1/2
+;; (two-thirds-series 2) is 3/4
+;; HINTS: even? and odd? are predicates; (expt 2 3) is 2^3.
+(define (two-thirds-series-r n)
+  1)
+
+;; write a recursive procedure for the same
+;; that produces an ITERATIVE process
+(define (two-thirds-series-i n)
+  1)
+
+;; SICP exercise 1.11 (pp. 42).
+;; https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_thm_1.11
+;; In this problem, you implement a recursive mathematical function.
+;; Only do the recursive-process implementation. 
+(define (f-recursive n)
+  1)
+
+;; SICP exercise 1.16 (pp. 46).
+;; https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_thm_1.16
+;; complete the fast-expt implementation using an iterative process
+;; Note: This is hard! If you do this on your own, congratulations.
+(define (fast-expt b n)
+  1)
+
+;; Before answering the next two questions, read these sources:
+;;   https://docs.racket-lang.org/guide/Lists__Iteration__and_Recursion.html#%28part._.Recursion_versus_.Iteration%29
+;;   https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-34.html#%_idx_6088
+;;   https://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r5rs-html.old/r5rs_22.html
+
+;; What does the "recursive" mean?
+;; 
+;; For each of the five statements, uncomment the definition line to indicate
+;; whether the statement is true or false.
+;;
+;; 1. Recursive means defined in terms of itself.
+;; (define r1 #t)
+;; (define r1 #f)
+;;
+;; 2. Recursion in computing is analogous to induction in mathematics.
+;; (define r2 #t)
+;; (define r2 #f)
+;;
+;; 3. If a process can be defined using an iterative recursion,
+;;    it's always better to do it that way.
+;; (define r3 #t)
+;; (define r3 #f)
+;;
+;; 4. Recursive and looping are synonyms.
+;; (define r4 #t)
+;; (define r4 #f)
+;;
+;; 5. Iteration and looping are synonyms.
+;; (define r5 #t)
+;; (define r5 #f)
+;;
+;; autograding note: this question is graded as all-or-nothing;
+;; unless you have all of the answers correct, you will not receive credit.
+
+;; What does "tail recursion" mean?
+;; 
+;; For each of the five statements, uncomment the definition line to indicate
+;; whether the statement is true or false.
+;;
+;; 1. All recursive programs are tail-recursive.
+;; (define tr1 #t)
+;; (define tr1 #f)
+;;
+;; 2. Tail recursion is a feature implemented by the Scheme interpreter (or compiler).
+;; (define tr2 #t)
+;; (define tr2 #f)
+;;
+;; 3. In order to be considered a proper Scheme implementation, tail recursion must
+;;    be provided.
+;; (define tr3 #t)
+;; (define tr3 #f)
+;;
+;; 4. If a program can be optimized with tail recursion, when carried out, it is
+;;    effectively performing a loop.
+;; (define tr4 #t)
+;; (define tr4 #f)
+;;
+;; 5. In Racket, a non-tail-recursive procedure will exhaust memory at
+;;    approximately the same depth as a C-style language would overflow the stack.
+;; (define tr5 #t)
+;; (define tr5 #f)
+;;
+;; autograding note: this question is graded as all-or-nothing;
+;; unless you have all of the answers correct, you will not receive credit.
+

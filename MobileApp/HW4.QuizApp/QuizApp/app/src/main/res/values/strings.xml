@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="title">MATH QUIZ</string>
+    <string name="Q1">1. A triangle with one angle greater than 90 degrees.</string>
+    <string name="a11">Equilateral Triangle</string>
+    <string name="a12">Obtuse Triangle</string>
+    <string name="a13">Acute Triangle</string>
+    <string name="Q2">2. Mom asked Susan to go to the store and buy three loaves of bread which cost $2.95 per loaf. She gives Susan a $20 bill and tells her to bring back all the change (no candy this trip). How much money will Susan return to her mom after buying the bread?</string>
+    <string name="A2_1">$11.15</string>
+    <string name="a2_2">$11.35</string>
+    <string name="a2_3">$12.15</string>
+    <string name="q3">3. 19 + ... = 25</string>
+    <string name="a3_1">6</string>
+    <string name="a3_2">7</string>
+    <string name="a3_3">(-5 + 11)</string>
+    <string name="q4">4. Two triangl-shaped lots are congruent. Find the x and w side length.</string>
+    <string name="a4_1">v = 140 ft, x = 186.7 ft</string>
+    <string name="a4_2">v = 186.7ft, v = 140 ft</string>
+    <string name="a4_3">v = 233.4 ft, x = 140 ft</string>
+    <string name="submit">Submit</string>
+    <string name="scoretxt">Your Score is: \t</string>
+    <string name="score">0</string>
+    <string name="reset">Reset</string>
+</resources>

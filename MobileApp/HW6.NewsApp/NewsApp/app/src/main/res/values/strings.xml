@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="no_stores">There are no stories at this point of time</string>
+    <string name="no_link_found">No link found</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="language">language</string>
+    <string name="news_author">news_author</string>
+    <string name="news_date">news_date</string>
+    <string name="news_title">news_title</string>
+</resources>

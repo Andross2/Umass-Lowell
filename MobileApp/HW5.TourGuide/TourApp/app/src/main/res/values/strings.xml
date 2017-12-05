@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TourApp</string>
+    <string name="lowell">LOWELL - MA</string>
+    <string name="parks">Parks</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="museums">Museums</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+</resources>
